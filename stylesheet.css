@@ -83,6 +83,7 @@
   .home-bkg {
     background-image: url("./images/HI_RES_NA.jpeg");
     background-size: cover;
+    background-position: bottom;
     height: 100%;
   }
   .nav-menu {
