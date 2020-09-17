@@ -1,6 +1,6 @@
 function openMenu() {
   if (checkMobile())  {
-    document.write("mobile");
+    document.querySelector(".nav-menu").style.animation = "fade-in 0.5s forwards";
   }
   else {
     document.querySelector(".nav-menu").style.animation = "slide-in 0.5s forwards";
@@ -9,7 +9,7 @@ function openMenu() {
 
 function closeMenu()  {
   if (checkMobile())  {
-    document.write("mobile");
+    document.querySelector(".nav-menu").style.animation = "fade-out 0.5s forwards";
   }
   else {
     document.querySelector(".nav-menu").style.animation = "slide-out 0.5s forwards";

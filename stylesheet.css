@@ -38,45 +38,15 @@
     top: 0;
     z-index: 2;
   }
-  .nav-menu div {
-    padding: 10px;
-    cursor: pointer;
-  }
-  .nav-menu div:hover {
-    color: red;
-    transition: 0.3s;
-  }
 }
 
-.home-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  width: 75%;
+.nav-menu div {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-
-.na {
-  background-color: #000;
-  color: #FFF;
-  font-family: inherit;
-}
-
-.title  {
-  color: #818181;
-  font-size: 10vw;
-  font-family: "Roboto Slab", sans-serif;
-}
-
-@keyframes slide-in {
-  0%  {width: 0}
-  100%  {width: 20vw; visibility: visible}
-}
-
-@keyframes slide-out {
-  0%  {width: 20vw}
-  100%%  {width: 0; visibility: hidden}
+.nav-menu div:hover {
+  color: red;
 }
 
 @media only screen and (max-width: 600px) { /*---Mobile---*/
@@ -104,6 +74,53 @@
     overflow-x: hidden;
   }
 }
+
+
+.home-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 75%;
+}
+
+.scroll-down  {
+  cursor: pointer;
+}
+
+.na {
+  background-color: #000;
+  color: #FFF;
+  font-family: inherit;
+}
+
+.title  {
+  color: #818181;
+  font-size: 10vw;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+@keyframes slide-in {
+  0%  {width: 0}
+  100%  {width: 20vw; visibility: visible}
+}
+
+@keyframes slide-out {
+  0%  {width: 20vw}
+  100%%  {width: 0; visibility: hidden}
+}
+
+@keyframes fade-in {
+  0%  {width: 100%; opacity: 0}
+  100%  {width: 100%; opacity: 1; visibility: visible}
+}
+
+@keyframes fade-out {
+  0%  {width: 100%; opacity: 1}
+  100%  {width: 0; opacity: 0; visibility: hidden}
+}
+
 
 .sticky-button  {
   cursor: pointer;

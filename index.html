@@ -9,7 +9,7 @@
 
 <body>
   <div class="nav-menu">
-    <div onclick="closeMenu()">&times</div>
+    <div style="cursor: pointer" onclick="closeMenu()">&times</div>
     <div>Home</div>
     <div>Upcoming shows</div>
     <div>People</div>
@@ -25,8 +25,12 @@
     <div class="home-title">
       <span class="title"><span class="na">Not Another</span> Drama Group</span>
     </div>
+    <div href="#scroll-down" class="scroll-down">
+      <img src="./svg/chevron.svg" width="75vh"/>
+    </div>
   </div>
-  
-<script src="scriptsheet.js"></script>
+
+<div id="scroll-down"></div>
 </body>
+<script src="scriptsheet.js"></script>
 </html>
