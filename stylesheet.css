@@ -1,0 +1,101 @@
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) { /*---Desktop---*/
+  .bkg-home {
+    background-image: url("./images/HI_RES_NA.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    z-index: -1;
+  }
+  .scroll-down {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: transparent;
+    color: white;
+    left: 50%;
+    margin-bottom: 20px;
+  }
+  .nav-menu {
+    visibility: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    background-color: gray;
+    width: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  .nav-menu div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .nav-menu div:hover {
+    color: red;
+    transition: 0.3s;
+  }
+}
+
+@keyframes slide-in {
+  0%  {width: 0}
+  100%  {width: 20vw; visibility: visible}
+}
+
+@keyframes slide-out {
+  0%  {width: 20vw}
+  100%  {width: 0; visibility: hidden}
+}
+
+@media only screen and (max-width: 600px) { /*---Mobile---*/
+  .bkg-home {
+    background-image: url("./images/HI_RES_NA.jpeg");
+    background-size: cover;
+    height: 100%;
+  }
+  .nav-menu {
+    color: white;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    visibility: hidden;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.95);
+    overflow-x: hidden;
+  }
+}
+
+.sticky-button  {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.sticky-button:hover  {
+  color: red;
+  transition: 0.3s;
+}
