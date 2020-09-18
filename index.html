@@ -7,20 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@700&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
   </head>
 
+<!-- Navigation Menus -->
+<div class="nav-menu">
+  <div style="cursor: pointer" onclick="closeMenu()">&times</div>
+  <div>Home</div>
+  <div>Upcoming shows</div>
+  <div>People</div>
+  <div>Contact</div>
+</div>
+
+<div class="sticky-button" onclick="openMenu()">
+  <img src="./svg/menu.svg" width=75px />
+    Menu
+</div>
+
+
+<!-- Body -->
+
 <body>
-  <div class="nav-menu">
-    <div style="cursor: pointer" onclick="closeMenu()">&times</div>
-    <div>Home</div>
-    <div>Upcoming shows</div>
-    <div>People</div>
-    <div>Contact</div>
-  </div>
 
-  <div class="sticky-button" onclick="openMenu()">
-    <img src="./svg/menu.svg" width=75px />
-      Menu
-  </div>
-
+<!-- This means everything w/ the background image NA_HI_RES.jpeg -->
+<div class="first-image-bkg">
   <div class="home-bkg">
     <div class="home-title">
       <span class="title"><span class="na">Not Another</span> Drama Group</span>
@@ -53,7 +60,8 @@
       <img src="./images/nathang.jpg" height=100%/>
     </div>
   </div>
-
+  
+</div>
 </body>
 <script src="scriptsheet.js"></script>
 </html>

@@ -4,14 +4,11 @@
   color: white;
 }
 
+
+
 @media only screen and (min-width: 600px) { /*---Desktop---*/
   .home-bkg {
-    background-image: url("./images/HI_RES_NA.jpeg");
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100%;
-    z-index: -1;
   }
   .scroll-down {
     position: absolute;
@@ -38,6 +35,12 @@
     top: 0;
     z-index: 2;
   }
+  .first-image-bkg  {
+    background-image: url("./images/HI_RES_NA.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .nav-menu div {
@@ -51,10 +54,13 @@
 
 @media only screen and (max-width: 600px) { /*---Mobile---*/
   .home-bkg {
-    background-image: url("./images/HI_RES_NA.jpeg");
-    background-size: cover;
-    background-position: bottom;
     height: 100%;
+  }
+  .first-image-bkg  {
+    background-image: url("./images/HI_RES_NA.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    height: 100%
   }
   .nav-menu {
     color: white;
@@ -70,8 +76,11 @@
     left: 0;
     top: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(0,0,0,0.9);
     overflow-x: hidden;
+  }
+  .scroll-down  {
+    display: none;
   }
 }
 
@@ -146,9 +155,4 @@
   justify-content: space-around;
   align-items: center;
   height: 25%;
-  background-image: url("./images/HI_RES_NA.jpeg");
-  background-position: top;
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: darken;
 }
