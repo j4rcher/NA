@@ -4,8 +4,6 @@
   color: white;
 }
 
-
-
 @media only screen and (min-width: 600px) { /*---Desktop---*/
   .home-bkg {
     height: 100%;
@@ -42,13 +40,9 @@
     background-attachment: fixed;
   }
   .image-segment  {
-    height: 35%;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-  }
-  .image-segment#blue-img {
-    background-image: url("./images/Blue.jpg");
   }
 }
 
@@ -76,9 +70,6 @@
     background-size: cover;
     background-position: bottom;
   }
-  .image-segment#blue-img {
-    background-image: url("./images/Blue.jpg");
-  }
   .nav-menu {
     color: white;
     font-size: 40px;
@@ -99,6 +90,21 @@
   .scroll-down  {
     display: none;
   }
+  .first-image-bkg  {
+    background-image: url("./images/HI_RES_NA.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .image-segment  {
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+}
+
+.image-segment#blue-img {
+  background-image: url("./images/Blue.jpg");
 }
 
 .home-title {
@@ -166,10 +172,11 @@
 .width-segment  {
   background-color: rgba(0, 0, 0, 0.8);
   padding-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 25%;
 }
