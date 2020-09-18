@@ -75,7 +75,6 @@
   }
 }
 
-
 .home-title {
   position: absolute;
   top: 50%;
@@ -121,7 +120,6 @@
   100%  {width: 0; opacity: 0; visibility: hidden}
 }
 
-
 .sticky-button  {
   cursor: pointer;
   display: flex;
@@ -137,4 +135,15 @@
 .sticky-button:hover  {
   color: red;
   transition: 0.3s;
+}
+
+.width-segment  {
+  padding-top: 50px;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
 }
