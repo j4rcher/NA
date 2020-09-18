@@ -41,6 +41,15 @@
     background-size: cover;
     background-attachment: fixed;
   }
+  .image-segment  {
+    height: 35%;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+  .image-segment#blue-img {
+    background-image: url("./images/Blue.jpg");
+  }
 }
 
 .nav-menu div {
@@ -61,6 +70,14 @@
     background-position: bottom;
     background-size: cover;
     height: 100%
+  }
+  .image-segment  {
+    height: 35%;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .image-segment#blue-img {
+    background-image: url("./images/Blue.jpg");
   }
   .nav-menu {
     color: white;
